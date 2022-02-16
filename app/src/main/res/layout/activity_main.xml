@@ -134,6 +134,9 @@
             android:layout_height="match_parent"
             android:layout_margin="8dp"
             android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="@string/iconrate"
+            android:textSize="20sp"
             app:cornerRadius="50dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -141,24 +144,86 @@
             android:layout_height="match_parent"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            app:cornerRadius="50dp" />
+            android:backgroundTint="#E91E63"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/family_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            app:cornerRadius="50dp" />
+            android:backgroundTint="#AEF4EB97"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/Tomato"
+            app:iconGravity="textTop"
+            app:iconSize="35dp"
+            app:iconTint="#EA0E16"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            app:cornerRadius="50dp" />
+            android:backgroundTint="#E91E63"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/Actions"
+            app:iconGravity="end"
+            app:iconSize="40dp"
+            app:iconTint="#F8FEFF"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="@string/rate"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="@string/family"
+
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="@string/percent"
+
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="@string/similar"
+
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
     <View
+        android:id="@+id/view"
         android:layout_width="400dp"
         android:layout_height="2dp"
         android:layout_marginTop="200dp"
@@ -166,6 +231,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:text="@string/story"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
