@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hw6_Q3</string>
+    <string name="alladin">Aladdin (2019)</string>
+    <string name="date">May 8, 2019</string>
+    <string name="rent">RENT FROM $4.99</string>
+    <string name="buy">BUY FROM $9.99</string>
 </resources>
