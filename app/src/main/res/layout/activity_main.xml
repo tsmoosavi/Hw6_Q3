@@ -159,7 +159,7 @@
             app:icon="@drawable/goje"
             app:iconGravity="textTop"
             app:iconSize="35dp"
-            app:iconTint="#EA0E16"
+            app:iconTintMode="multiply"
             tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <com.google.android.material.button.MaterialButton
